@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: rgb(173, 189, 178);
+
+}
+
+header {
+    font-size: 3rem;
+    color: rgb(250, 250, 250);
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/background-img.jpg);
+    height: 100vh;
+
+}
+
+header nav ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    color: red;
+}
+
+header nav ul li {
+    margin-left: 10px;
+}
+
+header button {
+    background-color: rgb(181, 162, 162);
+    height: 40px;
+    width: 80px;
+
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .title {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(197, 132, 232, 0.839);
+}
+
+/* ------------------  */
+/* Body Page*/
+
+
+
+#jobs {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+
+}
+
+
+main section#jobs ul li {
+    margin-top: 10px;
+    background-color: rgb(109, 237, 239);
+}
+
+
+main section#jobs img {
+    height: 250px;
+    width: 300px;
+}
+
+main section#jobs img:hover {
+    transition-delay: 0.1s;
+    transform: scale(1.5);
+}
+
+
+
+main section#jobs .description {
+    text-align: center;
+    align-items: center;
+}
+
+main section#jobs .description span {
+    font-weight: bold;
+
+}
+
+
+
+
+main section#jobs ul li {
+    border: 1px solid red;
+    height: 250px;
+    width: 600px;
+}
+
+main section#jobs ul li img {
+    float: left;
+}
+
+/*----------------------*/
+
+
+/*
+    SECTION CONTACTS
+*/
+
+
+
+
+main section#contacts {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main section#contacts h2 {
+    margin-bottom: 50px;
+    color: red;
+    font-size: 3rem
+}
+
+main section#contacts ul li img {
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+}
+
+main section#contacts ul li img:hover {
+    transform: scale(1.1)
+}
+
+
+
+/*----------------------*/
+
+/*
+    RESPONSIVIDADE
+*/
+
+@media (max-width: 700px) {
+    header {
+
+        height: 95vh;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    header .title {
+        padding: 10px;
+    }
+
+    main section#jobs ul {
+        margin: 10px 0;
+    }
+
+    main section#jobs img {
+        height: 250px;
+        width: 300px;
+
+    }
+
+    main section#contacts h2 {
+        margin-top: 200px;
+
+    }
+
+    main section#contacts ul li img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    header .title {
+        padding: 5px;
+    }
+
+    main section#jobs ul {
+        margin: 10px 0;
+        width: 350px;
+    }
+
+    main section#jobs img {
+        height: 150px;
+        width: 150px;
+
+    }
+
+    main section#jobs ul li {
+        border: 1px solid red;
+        width: 350px;
+        height: 250px;
+    }
+
+
+
+    main section#contacts ul li img {
+        height: 150px;
+        width: 150px;
+    }
+
+}
